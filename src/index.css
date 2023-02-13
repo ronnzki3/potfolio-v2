@@ -1,0 +1,114 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
+
+body{
+  font-family: 'Montserrat', sans-serif;
+   font-size: 20px;
+}
+ul li{
+padding: 0 1rem;
+cursor: pointer;
+font-weight: 500;
+}
+
+ul li:hover{
+ color:gray;
+}
+
+svg{
+width: 80px;
+}
+span{
+font-size: 1rem;
+}
+.myImage{
+  background-image: url('Assets/cover-min.jpg');
+  /* background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover; */
+  /* background-position: 40%; */
+  font-family: 'Dancing Script', cursive;
+}
+.myName{
+  font-family: 'Dancing Script', cursive;
+  /* font-size: 5rem; */
+  /* margin: 1rem 0; */
+}
+.rrtxt{
+  transform: scale(-1, 1) skewX(-44deg);
+  -moz-transform: scale(-1, 1) skewX(-44deg);
+  -webkit-transform: scale(-1, 1) skewX(-44deg);
+  -o-transform: scale(-1, 1) skewX(-44deg);
+  -ms-transform: scale(-1, 1) skewX(-44deg);
+  transform: scale(-1, 1) skewX(-44deg);
+}
+.bbtxt{
+  transform: skewX(45deg);
+  -moz-transform: skewX(45deg);
+  -webkit-transform: skewX(45deg);
+  -o-transform:skewX(45deg);
+  -ms-transform: skewX(45deg);
+  transform: skewX(45deg);
+}
+.myImage::after{
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 10;
+}
+.myid-photo{
+  background-image: url('Assets/aboutme.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-position: 0 10%;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+.dentalImage{
+  background-image: url('Assets/dental.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.flgImage{
+  background-image: url('Assets/flg.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-position: 0 0;
+}
+.mxImage{
+  background-image: url('Assets/mxx.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.lvImage{
+  background-image: url('Assets/lvbanner.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-position: 0 15%;
+}
+.lendingImage{
+  background-image: url('Assets/lendingapp.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-position: 0 15%;
+}
+.platforms li{
+  display: inline-flex;
+}
